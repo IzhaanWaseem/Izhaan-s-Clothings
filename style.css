@@ -1,0 +1,151 @@
+/* Example of media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Example of hover effects */
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Example of improved typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Example of subtle animations */
+.product-card {
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            width: 50px;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #hero {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        #products {
+            padding: 2rem;
+            text-align: center;
+        }
+        .product-card {
+            display: inline-block;
+            width: 300px;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #about, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+#contact{
+    font-size: 1.7em;
+}
+
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        #login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        #login-modal .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #login-modal .modal-content input {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #login-modal .modal-content button {
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+        }
+        #login-modal .modal-content button:hover {
+            background-color: #555;
+        }
