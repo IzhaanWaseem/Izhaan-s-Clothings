@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
 document.addEventListener("DOMContentLoaded", () => {
     const cartLink = document.getElementById("cart-link");
     const cartModal = document.getElementById("cart-modal");
@@ -89,18 +88,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartItems = document.getElementById("cart-items");
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener("click", (e) => {
-            const productCard = e.target.closest(".product-card");
-            const productName = productCard.querySelector("h3").innerText;
-            const productPrice = productCard.querySelector("p").innerText;
-            const cartItem = document.createElement("div");
-            cartItem.className = "cart-item";
-            cartItem.innerHTML = `<p>${productName} - ${productPrice}</p>`;
-            cartItems.appendChild(cartItem);
-            alert(`${productName} added to cart!`);
-        });
+    addToCartButtons.forEach((button) => {
+        // Remove any existing event listeners before adding a new one
+        button.removeEventListener("click", handleAddToCart);
+        button.addEventListener("click", handleAddToCart);
     });
+
+    function handleAddToCart(e) {
+        const productCard = e.target.closest(".product-card");
+        const productName = productCard.querySelector("h3").innerText;
+        const productPrice = productCard.querySelector("p").innerText;
+        const cartItem = document.createElement("div");
+        cartItem.className = "cart-item";
+        cartItem.innerHTML = `<p>${productName} - ${productPrice}</p>`;
+        cartItems.appendChild(cartItem);
+        alert(`${productName} added to cart!`);
+    }
 
     cartLink.addEventListener("click", (e) => {
         e.preventDefault();
@@ -121,6 +124,3 @@ document.addEventListener("DOMContentLoaded", () => {
         cartItems.innerHTML = "";  // Clear the cart items after checkout
     });
 });
-
-
-
