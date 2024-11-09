@@ -7,87 +7,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbXMzOwpAh4pCW2XdBZmiQhxFNgRthkAHYg&s" alt="Logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#" id="login-link">Login</a>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h2>Welcome to Izhaan's Clothings</h2>
-        <p>Discover the best products at unbeatable prices.</p>
-        <a href="#products" class="btn">Shop Now</a>
-    </section>
-    
-    <section id="products">
-        <h2>Our Products</h2>
-        <div id="product-list">
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSihg4lpwPekduRa7BGmlcLnmbS979HrRWQ9w&s" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$10.00</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDXzhrAtsIrolyj_HWep_NSF6xQU8Twddvw&s" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$20.00</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8pdUA7ecJNGgn3Y8SVEUT5KsNvxvw6yC6Q&s" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>$30.00</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIf-l1Vrj17lMEtHgLNZ0OgQ3CsHsqjQ0Mw&s" alt="Product 4">
-                <h3>Product 4</h3>
-                <p>$40.00</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-        </div>
-        <input type="text" id="product-filter" placeholder="Filter products by name">
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Izhaan's Clothings is the best place to find the latest and greatest products at unbeatable prices. Our mission is to provide high-quality products and excellent customer service.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Izhaan's Clothings. All rights reserved.</p>
-    </footer>
-    
-    <!-- Login Modal -->
-    <div id="login-modal">
-        <div class="modal-content">
-            <h2>Login</h2>
-            <form id="login-form">
-                <input type="text" id="username" placeholder="Username" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <button type="submit" class="btn">Login</button>
-            </form>
-        </div>
-    </div>
-    
-    <script src="script.js">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Izhaan's Clothings</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbXMzOwpAh4pCW2XdBZmiQhxFNgRthkAHYg&s" alt="Logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#" id="login-link">Login</a>
+                <a href="#" id="cart-link">Cart</a>
+            </nav>
+        </header>
         
-    </script>
-</body>
-</html>
+        <section id="hero">
+            <h2>Welcome to Izhaan's Clothings</h2>
+            <p>Discover the best products at unbeatable prices.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </section>
+        
+        <section id="products">
+            <h2>Our Products</h2>
+            <div id="product-list">
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSihg4lpwPekduRa7BGmlcLnmbS979HrRWQ9w&s" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDXzhrAtsIrolyj_HWep_NSF6xQU8Twddvw&s" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$20.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8pdUA7ecJNGgn3Y8SVEUT5KsNvxvw6yC6Q&s" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$30.00</p>
+                    <a href="#" class="btn add-to-cart">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIf-l1Vrj17lMEtHgLNZ0OgQ3CsHsqjQ0Mw&s" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>$40.00</p>
+                    <a href="#" class="btn add-to-cart">Buy Now</a>
+                </div>
+            </div>
+                <!-- Add more product cards as needed -->
+            </div>
+            <input type="text" id="product-filter" placeholder="Filter products by name">
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Izhaan's Clothings is the best place to find the latest and greatest products at unbeatable prices. Our mission is to provide high-quality products and excellent customer service.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Izhaan's Clothings. All rights reserved.</p>
+        </footer>
+        
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="overlay">
+            <div class="modal-content">
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <button id="checkout-btn" class="btn">Checkout</button>
+                <button id="close-cart" class="btn">Close</button>
+            </div>
+        </div>
+        
+        <!-- Thank You Modal -->
+        <div id="thank-you-modal" class="overlay">
+            <div class="modal-content">
+                <h2>Thank you for shopping with us!</h2>
+                <button id="close-thank-you" class="btn">Close</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
