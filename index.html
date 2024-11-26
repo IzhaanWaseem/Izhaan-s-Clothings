@@ -61,6 +61,36 @@
                     <p>$40.00</p>
                     <a href="#" class="btn add-to-cart">Buy Now</a>
                 </div>
+                <div class="product-card">
+                    <img src="https://shorturl.at/u8UQc" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p>$25.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://shorturl.at/vXvWC" alt="Product 6">
+                    <h3>Product 6</h3>
+                    <p>$35.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://tinyurl.com/y59acrrp" alt="Product 7">
+                    <h3>Product 7</h3>
+                    <p>$45.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://tinyurl.com/yd4bhw4c" alt="Product 8">
+                    <h3>Product 8</h3>
+                    <p>$50.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://tinyurl.com/498ckkuc" alt="Product 9">
+                    <h3>Product 9</h3>
+                    <p>$50.00</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
             </div>
                 <!-- Add more product cards as needed -->
             </div>
@@ -93,6 +123,9 @@
                 <div id="cart-items">
                     <!-- Cart items will be dynamically added here -->
                 </div>
+                <div class="cart-summary">
+                    <h3>Cart Total: <span id="cart-total">$0.00</span></h3>
+                </div>
                 <button id="checkout-btn" class="btn">Checkout</button>
                 <button id="close-cart" class="btn">Close</button>
             </div>
@@ -106,7 +139,48 @@
             </div>
         </div>
         
+        <!-- Login Modal -->
+        <div id="login-modal" class="overlay">
+            <div class="modal-content">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" id="close-login" class="btn">Close</button>
+                    </div>
+                    <p class="signup-link">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Sign Up Modal -->
+        <div id="signup-modal" class="overlay">
+            <div class="modal-content">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn">Sign Up</button>
+                        <button type="button" id="close-signup" class="btn">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
         <script src="script.js"></script>
     </body>
     </html>
-    
