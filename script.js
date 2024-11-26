@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
    
     const welcomeMessage = document.createElement('p');
-    welcomeMessage.textContent = ${greeting}, welcome to Izhaan's Clothings!;
+    welcomeMessage.textContent = `${greeting}, welcome to Izhaan's Clothings!`;
     heroSection.appendChild(welcomeMessage);
    
     // Product filter
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         updateCartTotal();
-        alert(${productName} added to cart!);
+        alert(`${productName} added to cart!`);
     }
 
     function updateCartTotal() {
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
             total += price * quantity;
         });
         
-        document.getElementById('cart-total').textContent = $${total.toFixed(2)};
+        document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
     }
 
     cartLink.addEventListener("click", (e) => {
@@ -222,7 +222,7 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
     if (user && user.password === password) {
         currentUser = user;
         loginModal.style.display = 'none';
-        loginLink.textContent = Welcome, ${user.name};
+        loginLink.textContent = `Welcome, ${user.name}`;
         document.getElementById('login-form').reset();
         alert('Successfully logged in!');
         
