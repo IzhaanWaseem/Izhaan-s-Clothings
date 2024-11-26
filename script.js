@@ -181,7 +181,7 @@ const closeSignup = document.getElementById('close-signup');
 let users = [
     // Add a test user for development
     {
-        name: "izhaan",
+        name: "Izhaan",
         email: "izhaan@gmail.com",
         password: "izhaan123"
     }
@@ -222,7 +222,7 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
     if (user && user.password === password) {
         currentUser = user;
         loginModal.style.display = 'none';
-        loginLink.textContent = `Welcome, ${user.name}`;
+        loginLink.textContent = `Welcome , ${user.name}`;
         document.getElementById('login-form').reset();
         alert('Successfully logged in!');
         
