@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
    
     const welcomeMessage = document.createElement('p');
-    welcomeMessage.textContent = `${greeting}, welcome to Izhaan's Clothings!`;
+    welcomeMessage.textContent = `${greeting}, Welcome to Izhaan's Clothings!`;
     heroSection.appendChild(welcomeMessage);
    
     // Product filter
